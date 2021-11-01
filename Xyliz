@@ -1,4 +1,6 @@
-local espcolor = Color3.fromRGB(140, 69, 102)
+--drifted
+
+local espcolor = Color3.fromRGB(111, 13, 221)
 local wallhack_esp_transparency = .4
 local gui_hide_button = {Enum.KeyCode.LeftControl, "h"}
 local plrs = game:GetService("Players")
@@ -201,7 +203,7 @@ CheatType_5.BorderSizePixel = 0
 CheatType_5.Position = UDim2.new(0.0307692308, 0, 0.919116616, 0)
 CheatType_5.Size = UDim2.new(0.699999988, 0, 1.05753362, 0)
 CheatType_5.Font = Enum.Font.GothamBold
-CheatType_5.Text = "Silent Aim"
+CheatType_5.Text = "Silent Aim" --Silently aims towards users head.
 CheatType_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 CheatType_5.TextSize = 15.000
 CheatType_5.TextWrapped = true
@@ -315,7 +317,7 @@ CheatType_8.TextXAlignment = Enum.TextXAlignment.Left
 TabFrame.Name = "TabFrame"
 TabFrame.Parent = AimbotFrame
 TabFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-TabFrame.BackgroundColor3 = Color3.fromRGB(0, 237, 206)
+TabFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 128)
 TabFrame.BorderSizePixel = 0
 TabFrame.ClipsDescendants = true
 TabFrame.Position = UDim2.new(0.497435898, 0, 0.0926640928, 0)
@@ -668,7 +670,7 @@ end)
 local oldheadpos
 local lastaimapart
 game:GetService("RunService").RenderStepped:Connect(function()
-CheatType.Text = "Esp loop : "..tostring(autoesp)
+CheatType.Text = "Esp Loop : "..tostring(autoesp) --Keeps ESP on.
 if aimatpart and lplr.Character and lplr.Character.Head then
 if BetterDeathCount and lastaimapart and lastaimapart == aimatpart then
 local dist = (oldheadpos - aimatpart.CFrame.p).magnitude
