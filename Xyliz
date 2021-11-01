@@ -53,7 +53,7 @@ local Hide = Instance.new("TextButton")
 
 --Properties:
 
-NDAimbot.Name = "XylizAimbot"
+NDAimbot.Name = "Xyliz"
 NDAimbot.Parent = game.CoreGui
 
 AimbotFrame.Name = "AimbotFrame"
